@@ -4,7 +4,7 @@ const unit = document.getElementById('unit');
 unit.style.backgroundColor = Math.random() < 0.5 ? 'red' : 'cyan';
 
 // Открываем websocket соединение
-const ws = new WebSocket('ws://localhost:2346');
+const ws = new WebSocket('ws://192.168.2.165:2346');
 
 bodyElement.addEventListener('keydown', event => {
 	let top = unit.style.top ? unit.style.top : 0;
